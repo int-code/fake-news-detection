@@ -38,7 +38,7 @@ if __name__=="__main__":
     print("Starting pre-processing...")
 
     # Reading data and pre-processing
-    train_data = pd.read_csv('train.csv')
+    train_data = pd.read_csv('database/train.csv')
     train_data.fillna('', inplace=True)
 
     train_data['title'] = train_data['title'].apply(stem)
@@ -71,8 +71,8 @@ if __name__=="__main__":
     print("Model finished training")
     
     # Storing for later use
-    pickle.dump(titlevectorizer, open("titlevectorizer.pickle", "wb"))
-    pickle.dump(vectorizer, open("vectorizer.pickle", "wb"))
-    pickle.dump(model, open("model.pickle", "wb"))
+    pickle.dump(titlevectorizer, open("pickles/titlevectorizer.pickle", "wb"))
+    pickle.dump(vectorizer, open("pickles/vectorizer.pickle", "wb"))
+    pickle.dump(model, open("pickles/model.pickle", "wb"))
 
     print("Model built sucessfully")

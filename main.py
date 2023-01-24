@@ -8,9 +8,9 @@ TEXT = ''
 
 
 # Loading from storage
-titlevectorizer = pickle.load(open("titlevectorizer.pickle", "rb"))
-vectorizer = pickle.load(open("vectorizer.pickle", "rb"))
-model = pickle.load(open("model.pickle", "rb"))
+titlevectorizer = pickle.load(open("pickles/titlevectorizer.pickle", "rb"))
+vectorizer = pickle.load(open("pickles/vectorizer.pickle", "rb"))
+model = pickle.load(open("pickles/model.pickle", "rb"))
 
 
 # For passing input data through model
