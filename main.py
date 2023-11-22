@@ -35,7 +35,8 @@ def check(news:dict):
     return res
 
 
-print(check({
-    'title':TITLE,
-    'text':TEXT
-}))
+if __name__ == '__main__':
+    print(check({
+        'title':TITLE,
+        'text':TEXT
+    }))
